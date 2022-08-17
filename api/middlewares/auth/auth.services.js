@@ -1,5 +1,5 @@
-const { findUserByEmail } = require('../../users/services');
-const { verifyToken, signToken } = require('./controllers');
+const { findUserByEmail } = require('../../users/users.services');
+const { verifyToken, signToken } = require('./auth.controllers');
 
 async function loginUserHandler(req, res) {
   const { email, password } = req.body;
